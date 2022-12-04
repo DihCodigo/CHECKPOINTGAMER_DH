@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,700;1,300;1,500;1,700;1,800&family=Zen+Dots&display=swap');
+
+:root {
+    --ff-primary: "Montserrat", san-serif;
+
+    --bg-color-primary: grey;
+    --bg-color-secondary: #273746;
+    --bg-color-terciary: #1C2833;
+    --bg-color-end: #17202A;
+
+    --text-color-primary: black;
+    --text-color-secondary: white;
+
+    --text-color-decoration-primary: gold;
+    --text-color-decoration-secondary: purple;
+    --text-color-decoration-terciary: Fuchsia;
+
+    --transition: all 0.4s linear;
+    --dark-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.2);
+    --spacing: 0.25rem
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--ff-primary);
+    background: linear-gradient(var(--bg-color-end), var(--bg-color-primary));
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: url('../image/view-of-illuminated-neon-gaming-keyboard-setup-and-controller.jpg');
+
+}
+
+h1 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+li {
+    list-style: none;
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+i {
+    background: transparent;
+}
+
+/************************
+NAVBAR
+************************/
+.contat {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: var(--bg-color-secondary);
+    align-items: center;
+}
+
+.contat ul {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.contat ul a {
+    color: var(--text-color-decoration-primary);
+    transition: var(--transition);
+
+}
+
+.contat ul a:hover {
+    color: var(--text-color-decoration-terciary);
+}
+
+
+.navbar {
+    position: fixed;
+    background: var(--text-color-decoration-primary);
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.navbar ul a:hover {
+    border-bottom: 1px solid var(--bg-color-secondary);
+}
+
+.navbar-buttons .btn {
+    padding: 10px 30px;
+    background: transparent;
+    border: 1px solid var(--bg-color-terciary);
+    font-size: 1.5rem;
+    letter-spacing: .2rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.navbar-buttons .btn:hover {
+    background: var(--bg-color-terciary);
+    color: var(--text-color-secondary);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 300px;
+    align-items: center;
+
+}
+
+.container-info {
+    text-transform: uppercase;
+    color: var(--text-color-secondary);
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    text-align: center;
+    gap: 20px;
+}
+
+.container-info h2 {
+    font-size: 2.5rem;
+}
+
+.container .btn {
+    padding: 10px 30px;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-top: 10px;
+    background: var(--text-color-decoration-primary);
+    color: var(--text-color-decoration-secondary);
+    border: none;
+    transition: var(--transition);
+    opacity: .7;
+}
+
+.container .btn:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 730px) {
+
+    .navbar ul a {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        height: 120px;
+        justify-content: space-around;
+    }
+    .navbar-buttons {
+        margin: 10px 0px;
+    }
+
+    .container-info {
+        min-width: 400px;
+    }
+    .container-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .container-info p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        height: 120px;
+        justify-content: space-around;
+    }
+    .navbar-buttons {
+        margin: 10px 0px;
+    }
+
+    .container-info {
+        min-width: 400px;
+    }
+    .container-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .container-info p {
+        font-size: 1.2rem;
+    }
+
+}
