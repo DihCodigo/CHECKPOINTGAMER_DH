@@ -34,7 +34,6 @@ body {
     font-family: var(--ff-primary);
     background: linear-gradient(var(--bg-color-end), var(--bg-color-primary));
     background-repeat: no-repeat;
-    height: 100vh;
     background-image: url('../image/view-of-illuminated-neon-gaming-keyboard-setup-and-controller.jpg');
 
 }
