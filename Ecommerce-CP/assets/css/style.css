@@ -83,7 +83,15 @@ NAVBAR
 .contat ul {
     display: flex;
     gap: 20px;
+    width: 100vw;
     padding: 5px;
+    justify-content: space-between;
+}
+
+.contat .ficha {
+    padding: 0px 10px;
+    border: 1px solid var(--text-color-decoration-terciary);
+    transition: var(--transition);
 }
 
 .contat ul a {
